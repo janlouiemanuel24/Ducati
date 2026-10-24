@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Ducati/static/css/main.f80653a3.css",
+    "main.js": "/Ducati/static/js/main.1ea4dc68.js",
+    "static/js/787.b701888c.chunk.js": "/Ducati/static/js/787.b701888c.chunk.js",
+    "static/media/bg_img.png": "/Ducati/static/media/bg_img.602c9efcf33386d476c7.png",
+    "static/media/scrambler.png": "/Ducati/static/media/scrambler.03f10851a965bb7a2a0b.png",
+    "static/media/animation.jpg": "/Ducati/static/media/animation.a28c0d169314d01d583b.jpg",
+    "static/media/action.jpg": "/Ducati/static/media/action.a4f2487023ac0c3c268a.jpg",
+    "static/media/romance.jpg": "/Ducati/static/media/romance.3082be1ec0b19ea305cd.jpg",
+    "static/media/drama.jpg": "/Ducati/static/media/drama.60c5532aa59754409fb2.jpg",
+    "static/media/horror.jpg": "/Ducati/static/media/horror.ae80e4a1165b309bed89.jpg",
+    "index.html": "/Ducati/index.html",
+    "main.f80653a3.css.map": "/Ducati/static/css/main.f80653a3.css.map",
+    "main.1ea4dc68.js.map": "/Ducati/static/js/main.1ea4dc68.js.map",
+    "787.b701888c.chunk.js.map": "/Ducati/static/js/787.b701888c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f80653a3.css",
+    "static/js/main.1ea4dc68.js"
+  ]
+}
