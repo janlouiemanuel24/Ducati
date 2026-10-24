@@ -1,0 +1,78 @@
+.form-alert {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 20px;
+  padding: 13px 14px;
+  border: 1px solid;
+  text-align: left;
+  animation: form-alert-entrance .2s ease-out;
+}
+
+.form-alert--error {
+  border-color: #f1c5c8;
+  background: #fff3f3;
+  color: #9f1520;
+}
+
+.form-alert--success {
+  border-color: #b9dfca;
+  background: #f0faf4;
+  color: #17623b;
+}
+
+.form-alert_icon {
+  display: flex;
+  width: 22px;
+  height: 22px;
+  flex: 0 0 22px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.form-alert_message {
+  flex: 1;
+  margin: 0 !important;
+  color: inherit !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  line-height: 1.5;
+  text-align: left !important;
+}
+
+.form-alert_dismiss {
+  padding: 0 2px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+  opacity: .7;
+}
+
+.form-alert_dismiss:hover {
+  opacity: 1;
+}
+
+@keyframes form-alert-entrance {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .form-alert {
+    animation: none;
+  }
+}

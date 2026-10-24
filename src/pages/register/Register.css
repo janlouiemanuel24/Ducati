@@ -1,0 +1,120 @@
+.register {
+  margin: 60px auto 80px;
+  padding: 40px;
+  width: min(100% - 40px, 440px);
+  border: 1px solid #e5e5e3;
+  box-shadow: 0 18px 60px rgba(20, 20, 22, .08);
+  background: #fff;
+}
+  .register input {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 14px 12px;
+    font-size: 16px;
+    border-radius: 2px; 
+    font-family: inherit;
+  }
+
+  #login-li
+  {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  
+#confirmation
+{
+  background-color: #fff;
+  outline: none;
+  color: #000;
+  border-bottom: 1px  solid #a5a5a5;
+  padding-left: 20px;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.register input[type=text],
+.register input[type=password] {
+  border: 1px solid #dededb;
+  transition: .2s;
+}
+
+.register input[type=text]:hover {
+  border-color: #d90018;
+} 
+
+.register input[type=submit] {
+  border: 1px solid #d90018;
+  background: #d90018;
+  color: #fff;
+  transition: 0.2s;
+  margin: 20px 0px;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
+
+.register input[type=submit]:hover {
+  background: #b90014;
+}
+
+  .register p {
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 28px;
+    font-family: inherit;
+    font-weight: 800;
+  }
+
+.register p {
+  margin-bottom: 40px;
+}
+
+.links {
+  display: table;
+  width: 100%;  
+  box-sizing: border-box;
+  border-top: 1px solid #c0c0c0;
+  margin-bottom: 10px;
+}
+
+  .register h2,
+  .register p,
+  .register a {
+    text-align: center;    
+  }
+
+.register a {
+  text-decoration: none;  
+  font-size: .8em;
+}
+
+.register a:visited {
+  color: inherit;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+.register button#login-li:hover {
+  color: #d90018;
+  text-decoration: underline;
+}
+
+.register img
+{
+  width: 60px;
+  margin-bottom: 20px;
+
+}

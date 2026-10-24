@@ -1,0 +1,136 @@
+.planets_section {
+  padding: 104px max(32px, calc((100% - 1240px) / 2)) 112px;
+  background: #f5f5f3;
+}
+
+.tabButtons {
+  margin-bottom: 36px;
+  text-align: left;
+}
+
+.tabButtons button {
+  position: relative;
+  padding: 14px 18px;
+  margin: 0 8px 8px 0;
+  border: 1px solid #dededb;
+  background: #fff;
+  color: #343436;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all .2s ease;
+}
+
+.tabButtons button:hover,
+.tabButtons button[aria-pressed='true'] {
+  border-color: #d90018;
+  background: #d90018;
+  color: #fff;
+}
+
+.tabButtons p {
+  margin: 0 0 24px;
+  color: #d90018;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .2em;
+}
+
+.main {
+  display: flex;
+  align-items: stretch;
+  gap: clamp(30px, 6vw, 88px);
+}
+
+.main > div:first-child {
+  display: flex;
+  flex: 1.2;
+  min-width: 0;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  background: #fff;
+}
+
+.planet {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  animation: planetEntrance .35s ease-out;
+}
+
+.descriptions {
+  display: flex;
+  flex: .8;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: 36px 0;
+}
+
+.description_title {
+  margin: 0 0 18px;
+  color: #181819;
+  font-size: clamp(34px, 4vw, 52px);
+  font-weight: 800;
+  letter-spacing: -.05em;
+  line-height: 1;
+  animation: titleEntrance .35s ease-out;
+}
+
+.descriptions p
+{
+  border-bottom: 1px solid #d90018;
+}
+
+@keyframes titleEntrance {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.description_list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.description_list li {
+  padding: 0;
+  color: #59595c;
+  font-size: 16px;
+  line-height: 1.8;
+  animation: textEntrance .35s ease-out;
+}
+
+@keyframes textEntrance {
+  from { opacity: 0; transform: translateX(12px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@media (max-width: 760px) {
+  .planets_section {
+    padding: 72px 20px;
+  }
+
+  .main {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .main > div:first-child {
+    min-height: 250px;
+  }
+
+  .planet {
+    max-height: 300px;
+  }
+
+  .descriptions {
+    padding: 12px 0 0;
+  }
+
+  .description_list li {
+    font-size: 15px;
+  }
+}

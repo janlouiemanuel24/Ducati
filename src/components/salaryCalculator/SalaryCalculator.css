@@ -1,0 +1,109 @@
+.calculator-container {
+  min-height: 620px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 24px;
+  background:
+    radial-gradient(ellipse at 15% 20%, rgba(217, 0, 24, .3), transparent 32%),
+    linear-gradient(135deg, #19191b 0%, #29292c 100%);
+}
+
+.calculator {
+  width: min(100%, 560px);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: clamp(28px, 5vw, 52px);
+  border: 1px solid rgba(255, 255, 255, .1);
+  background: #fff;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, .25);
+}
+
+.calculator h2 {
+  margin: 0 0 10px;
+  color: #181819;
+  font-size: clamp(25px, 4vw, 34px);
+  font-weight: 800;
+  letter-spacing: -.05em;
+}
+
+.calculator-eyebrow {
+  margin: 0 0 12px;
+  color: #d90018;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .2em;
+}
+
+.calculator-intro {
+  margin: 0 0 4px;
+  color: #66666a;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border: none;
+}
+
+.input-group label {
+  margin-bottom: 9px;
+  color: #353538;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.input-group input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 14px;
+  border: 1px solid #d9d9d7;
+  border-radius: 0;
+  outline: none;
+  background: #f8f8f7;
+  color: #181819;
+  text-align: left;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.input-group input:focus {
+  border-color: #d90018;
+  box-shadow: 0 0 0 3px rgba(217, 0, 24, .1);
+}
+
+.button-group button {
+  width: 100%;
+  min-height: 50px;
+  margin-top: 24px;
+  border: 0;
+  background: #d90018;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  transition: background-color .2s ease;
+}
+
+.button-group button:hover {
+  background: #b90014;
+}
+
+.output-group {
+  min-height: 50px;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.output-group p {
+  margin: 0;
+  color: #252528;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.6;
+}
